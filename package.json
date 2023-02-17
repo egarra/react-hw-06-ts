@@ -1,7 +1,7 @@
 {
-  "name": "react-hw-06-phonebook-ts",
+  "name": "react-hw-06-ts",
   "version": "0.1.0",
-  "homepage": "https://egarra.github.io/react-hw-06-phonebook-ts",
+  "homepage": "https://egarra.github.io/react-hw-06-ts",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
