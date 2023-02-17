@@ -8,9 +8,10 @@ export const ContactList: React.FC = () => {
         const action = deleteContact(id)
         dispatch(action)
       } 
-    const filter = useAppSelector(state => state.filter)
+    const filter = useAppSelector(state => state.filter.filter)
     const contacts = useAppSelector(state => state.persistedReducer.contacts.contacts)
     const visibleContacts = contacts.filter(contact => contact.name.toLowerCase().includes(filter.toLowerCase()))
+    
     return (
         <ul>
             {visibleContacts.map(({name, number, id}) => {

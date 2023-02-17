@@ -1,8 +1,8 @@
-import React from "react";
+import React, {ChangeEvent} from "react";
 import { useAppDispatch } from "../../hooks/redux";
 import { filterContact } from "../../redux/filterSlice";
 
-export const Filter = () => {
+export const Filter: React.FC = () => {
 
     const dispatch = useAppDispatch()
     return (
@@ -11,8 +11,8 @@ export const Filter = () => {
         <input
           placeholder="Type contact"
           type="text"
-          onChange={e => {
-            const action = filterContact(e.target.value)
+          onChange={(e: ChangeEvent<HTMLInputElement>) => {
+            const action = filterContact({ filter : e.target.value})
             dispatch(action)
           }}
         />

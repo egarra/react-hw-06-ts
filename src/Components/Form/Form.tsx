@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { IContact } from "../types/contact";
+import { IContact } from "../../types/contact";
 import { nanoid } from "nanoid";
 import { useAppDispatch } from "../../hooks/redux";
 import { addContact } from "../../redux/contactsSlice";

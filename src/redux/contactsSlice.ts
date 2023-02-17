@@ -1,6 +1,6 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
-import { IContact } from '../Components/types/contact';
+import { IContact } from '../types/contact';
 
 interface ContactsState {
     contacts: IContact[];
